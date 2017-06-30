@@ -1,5 +1,5 @@
 
-该文档为lua-nginx-module-api 的私人翻译文档，尽可能保证翻译的正确
+该文档为lua-nginx-module-api 的个人翻译文档，尽可能保证翻译的正确
 
 欢迎帮忙校验和提交
 
