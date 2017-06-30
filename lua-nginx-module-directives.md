@@ -72,7 +72,7 @@ Directives(指令)
 The basic building blocks of scripting Nginx with Lua are directives. Directives are used to specify when the user Lua code is run and
 how the result will be used. Below is a diagram showing the order in which directives are executed.
 
-指令集是用来指定何时运行用户lua代码，以及结果如何被使用。下图是显示指令集执行顺序
+指令集是用来指定何时运行用户lua代码，以及结果如何被使用。下图是显示指令集的执行顺序
 
 ![Lua Nginx Modules Directives](https://cloud.githubusercontent.com/assets/2137369/15272097/77d1c09e-1a37-11e6-97ef-d9767035fc3e.png)
 
