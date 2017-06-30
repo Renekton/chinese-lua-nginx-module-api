@@ -33,33 +33,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 [Back to TOC](#table-of-contents)
 
-See Also
-========
-
-* [ngx_stream_lua_module](https://github.com/openresty/stream-lua-nginx-module#readme) for an official port of this module for the NGINX "stream" subsystem (doing generic downstream TCP communications).
-* [lua-resty-memcached](https://github.com/openresty/lua-resty-memcached) library based on ngx_lua cosocket.
-* [lua-resty-redis](https://github.com/openresty/lua-resty-redis) library based on ngx_lua cosocket.
-* [lua-resty-mysql](https://github.com/openresty/lua-resty-mysql) library based on ngx_lua cosocket.
-* [lua-resty-upload](https://github.com/openresty/lua-resty-upload) library based on ngx_lua cosocket.
-* [lua-resty-dns](https://github.com/openresty/lua-resty-dns) library based on ngx_lua cosocket.
-* [lua-resty-websocket](https://github.com/openresty/lua-resty-websocket) library for both WebSocket server and client, based on ngx_lua cosocket.
-* [lua-resty-string](https://github.com/openresty/lua-resty-string) library based on [LuaJIT FFI](http://luajit.org/ext_ffi.html).
-* [lua-resty-lock](https://github.com/openresty/lua-resty-lock) library for a nonblocking simple lock API.
-* [lua-resty-cookie](https://github.com/cloudflare/lua-resty-cookie) library for HTTP cookie manipulation.
-* [Routing requests to different MySQL queries based on URI arguments](http://openresty.org/#RoutingMySQLQueriesBasedOnURIArgs)
-* [Dynamic Routing Based on Redis and Lua](http://openresty.org/#DynamicRoutingBasedOnRedis)
-* [Using LuaRocks with ngx_lua](http://openresty.org/#UsingLuaRocks)
-* [Introduction to ngx_lua](https://github.com/openresty/lua-nginx-module/wiki/Introduction)
-* [ngx_devel_kit](https://github.com/simpl/ngx_devel_kit)
-* [echo-nginx-module](http://github.com/openresty/echo-nginx-module)
-* [drizzle-nginx-module](http://github.com/openresty/drizzle-nginx-module)
-* [postgres-nginx-module](https://github.com/FRiCKLE/ngx_postgres)
-* [memc-nginx-module](http://github.com/openresty/memc-nginx-module)
-* [The OpenResty bundle](http://openresty.org)
-* [Nginx Systemtap Toolkit](https://github.com/openresty/nginx-systemtap-toolkit)
-
-[Back to TOC](#table-of-contents)
-
 Directives
 ==========
 
