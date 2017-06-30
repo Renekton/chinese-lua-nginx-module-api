@@ -1,5 +1,5 @@
 
-Directives
+Directives(指令)
 ==========
 
 * [lua_capture_error_log](#lua_capture_error_log)
