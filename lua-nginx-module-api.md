@@ -158,9 +158,15 @@ Introduction
 ------------
 The various `*_by_lua`, `*_by_lua_block` and `*_by_lua_file` configuration directives serve as gateways to the Lua API within the `nginx.conf` file. The Nginx Lua API described below can only be called within the user Lua code run in the context of these configuration directives.
 
+在nginx.conf文件里面，对于Lua API而言，各种`*_by_lua`，`*_by_lua`，`*_by_lua_block`和`*_by_lua_file`等配置命令作为网关来工作。以下描述的只能在用户代码中被调用Nginx Lua API接口，就运行在这些配置命令的上下文当中。
+
 The API is exposed to Lua in the form of two standard packages `ngx` and `ndk`. These packages are in the default global scope within ngx_lua and are always available within ngx_lua directives.
 
+这些API以`ngx`和`ndk`作为两个标准包的形式开放给Lua接口。这些包在ngx_lua中，是属于默认全局的，并且在ngx_lua指令当中总是适用的。
+
 The packages can be introduced into external Lua modules like this:
+
+这些软件包可以像这样被引入为外部lua模块：
 
 ```lua
 
