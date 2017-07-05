@@ -201,7 +201,9 @@ The ability to require these packages was introduced in the `v0.2.1rc19` release
 
 Network I/O operations in user code should only be done through the Nginx Lua API calls as the Nginx event loop may be blocked and performance drop off dramatically otherwise. Disk operations with relatively small amount of data can be done using the standard Lua `io` library but huge file reading and writing should be avoided wherever possible as they may block the Nginx process significantly. Delegating all network and disk I/O operations to Nginx's subrequests (via the [ngx.location.capture](#ngxlocationcapture) method and similar) is strongly recommended for maximum performance.
 
-由于Nginx的事件循环可能被阻塞，所以用户代码中的网络I/O等操作，只能调用Nginx Lua API来实现，否则会导致服务的性能大幅下降。
+由于Nginx的事件循环可能被阻塞，所以用户代码中的网络I/O等操作，应该只能调用Nginx Lua API来实现，否则会导致服务的性能大幅下降。
+相对较小数据的磁盘操作，可以使用Lua标准`io`库，但是大文件的读和写操作应该尽可能避免，因为这些操作有可能显著地阻塞Nginx进程。
+为了最高的性能，强烈建议将所有的网络和磁盘I/O操作交给Nginx的子请求来处理（通过 [ngx.location.capture](#ngxlocationcapture)类似的方法）。
 
 [Back to TOC](#nginx-api-for-lua)
 
