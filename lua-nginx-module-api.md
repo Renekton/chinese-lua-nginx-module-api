@@ -183,7 +183,11 @@ The packages can be introduced into external Lua modules like this:
 
 Use of the [package.seeall](http://www.lua.org/manual/5.1/manual.html#pdf-package.seeall) flag is strongly discouraged due to its various bad side-effects.
 
+由于[package.seeall](http://www.lua.org/manual/5.1/manual.html#pdf-package.seeall)的各种负面影响，我们强烈建议你不要使用这个模块。
+
 It is also possible to directly require the packages in external Lua modules:
+
+在外部的Lua模块当中，你也可以直接引用这些软件包：
 
 ```lua
 
