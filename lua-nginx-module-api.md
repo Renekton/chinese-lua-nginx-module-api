@@ -197,7 +197,11 @@ It is also possible to directly require the packages in external Lua modules:
 
 The ability to require these packages was introduced in the `v0.2.1rc19` release.
 
+为了能引用这些软件包，在`v0.2.1rc19`版本当中，该能力被引入了。
+
 Network I/O operations in user code should only be done through the Nginx Lua API calls as the Nginx event loop may be blocked and performance drop off dramatically otherwise. Disk operations with relatively small amount of data can be done using the standard Lua `io` library but huge file reading and writing should be avoided wherever possible as they may block the Nginx process significantly. Delegating all network and disk I/O operations to Nginx's subrequests (via the [ngx.location.capture](#ngxlocationcapture) method and similar) is strongly recommended for maximum performance.
+
+由于Nginx的事件循环可能被阻塞，所以用户代码中的网络I/O等操作，只能调用Nginx Lua API来实现，否则会导致服务的性能大幅下降。
 
 [Back to TOC](#nginx-api-for-lua)
 
