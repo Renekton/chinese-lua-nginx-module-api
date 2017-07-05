@@ -215,12 +215,16 @@ ngx.arg
 
 When this is used in the context of the [set_by_lua*](#set_by_lua) directives, this table is read-only and holds the input arguments to the config directives:
 
+当这个API在[set_by_lua*](#set_by_lua) 指令中的上下文中使用时，这个表是只读的，并且将输入参数保存到配置指令中：
+
 ```lua
 
  value = ngx.arg[n]
 ```
 
 Here is an example
+
+示例：
 
 ```nginx
 
