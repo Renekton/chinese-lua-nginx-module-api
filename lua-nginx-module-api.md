@@ -256,6 +256,8 @@ ngx.var.VARIABLE
 
 Read and write Nginx variable values.
 
+读写Nginx变量值。
+
 ```nginx
 
  value = ngx.var.some_nginx_variable_name
@@ -264,6 +266,8 @@ Read and write Nginx variable values.
 
 Note that only already defined nginx variables can be written to.
 For example:
+
+注意，只有已经被定义过的nginx变量可以被赋值。示例：
 
 ```nginx
 
@@ -278,11 +282,17 @@ For example:
 
 That is, nginx variables cannot be created on-the-fly.
 
+这意味着，nginx变量不能即时生成。
+
 Some special nginx variables like `$args` and `$limit_rate` can be assigned a value,
 many others are not, like `$query_string`, `$arg_PARAMETER`, and `$http_NAME`.
 
+一些特殊的nginx变量，例如`$args`和`$limit_rate`可以被赋值，许多其他的变量则不能被赋值，例如`$query_string`，`$arg_PARAMETER`，和`$http_NAME`。
+
 Nginx regex group capturing variables `$1`, `$2`, `$3`, and etc, can be read by this
 interface as well, by writing `ngx.var[1]`, `ngx.var[2]`, `ngx.var[3]`, and etc.
+
+
 
 Setting `ngx.var.Foo` to a `nil` value will unset the `$Foo` Nginx variable.
 
